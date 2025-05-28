@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar nav a, .navbar nav select, .navbar nav .login {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f3e7f5, #fdf0ff);
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  color: #6a1b9a;
+}
+
+.hero-text h1,
+.countdown h2,
+#countdown h2 {
+  font-family: Arial, sans-serif;
+}
+
+.hero-text h1 span {
+  color: #8e24aa;
+}
+
+.hero-text p {
+  margin: 3rem 0;
+  color: #555;
+}
+
+.cta-buttons .primary,
+.cta-buttons .secondary {
+  padding: 1rem 1.8rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-buttons .primary {
+  background: #6a1b9a;
+  color: white;
+}
+
+.cta-buttons .primary:hover {
+  background-color: #4a0c6a;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .secondary {
+  border: 2px solid #6a1b9a;
+  color: #6a1b9a;
+  background: transparent;
+}
+
+.cta-buttons .secondary:hover {
+  background-color: #8e24aa;
+  color: white;
+  border: 2px solid #8e24aa;
+  transition: all 0.3s ease;
+}
+
+.hero-img img {
+  max-width: 421px;
+  border-radius: 12px;
+  margin-top: 60px;
+}
+
+.countdown {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #a4508b, #5f0a87);
+  color: white;
+}
+
+.countdown h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: monospace;
+}
+
+.timer span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: block;
+}
+
+.timer div {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.save-btn {
+  margin-top: 3rem;
+  padding: 1.2rem 2.2rem;
+  font-size: 1.3rem;
+  background: rgb(255, 255, 255);
+  color: #6a1b9a;
+  border: none;
+  cursor: pointer;
+  opacity: 0.85;
+  border-radius: 8px;
+  font-family: nunito;
+  font-weight: bold;
+}
+
+.save-btn:hover {
+  background-color: #fcd34d;
+  color: #404040;
+  transition: all 0.3s ease;
+}
+
+
+.primary, .secondary {
+  text-decoration: none;
+}
+
+.primary:hover,
+.secondary:hover {
+  text-decoration: none;
+  opacity: 0.9; /* optional hover effect */
+}
+
+
+
+#countdown {
+    background: linear-gradient(to right, #a4508b, #5f0a87);;
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  
+  #countdown h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .countdown-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .time-segment {
+    background-color: #fed405;
+    color: #002B5B;
+    border-radius: 16px;
+    padding: 20px;
+    min-width: 90px;
+    box-shadow: 0 14px 25px rgba(0,0,0,0.1);
+    animation: popIn 0.8s ease-in-out;
+    transition: transform 0.2s ease;
+  }
+  
+  .time-segment:hover {
+    transform: scale(1.05);
+  }
+  
+  .time-segment span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+  }
+  
+  .time-segment p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* Mission Section */
+.mission {
+  background-color: #f3e8f4;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.mission h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+}
+.mission p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+}
+.mission-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.mission-cards .card {
+  background: #ffdf44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.mission-cards .card p {
+  margin-top: 1.5rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.how-it-works h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+}
+.how-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.how-step {
+  background-color: #ffdf44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 250px;
+}
+.step-number {
+  background: #bf6c01;
+  color: white;
+  font-weight: bold;
+  border-radius: 9999px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto 0.5rem;
+}
+
+/* Testimonial Section */
+.testimonial {
+  background-color: #f3e8f4;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: #9333ea;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.cta-banner h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.cta-button {
+  margin-top: 1rem;
+  background: white;
+  color: #9333ea;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* footer*/
+  .footer {
+    background: linear-gradient(to left, #73275c, #5f0a87);
+    color: #ffe600;
+    padding: 20px 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px; 
+    object-fit: cover;
+  }
+  
+  .footer-text h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-text p {
+    margin: 5px 0 0;
+    font-weight: 400;
+    color: #ffe600;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+    white-space: nowrap; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    object-fit: contain;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #FFF;
+  }
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  margin-top: -5px;
+  font-weight: bold;
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}

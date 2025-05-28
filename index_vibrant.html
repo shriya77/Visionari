@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisioNari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div style="position: absolute; top: 30px; left: 40px;">
+    <img src="visio-logo.png" alt="VisioNari Logo" style="height: 100px;">
+  </div>
+
+  <div style="position: absolute; top: 30px; right: 40px;">
+    <select id="language-selector" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="ta">தமிழ்</option>
+      <option value="te">తెలుగు</option>
+      <option value="kn">ಕನ್ನಡ</option>
+      <option value="hi">हिंदी</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <!--<header class="navbar">
+    <div class="logo">📘 VisioNari</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Register</a>
+      <select>
+        <option>EN</option>
+      </select>
+      <button class="login">Login</button>
+    </nav>
+  </header> -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span>Envision.</span><br>Empower.<br><span>Elevate.</span></h1>
+      <p>Join our English bootcamp designed to uplift,<br>educate, and connect women across the globe.</p>
+      <div class="cta-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrI2DU-Mz2zhjK_mNnCF2Zyw_Nha6gd2TYjpgBhFTuacmaqQ/viewform" class="primary" target="_blank">Join as Learner</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScj_QU2xBh5-QjM10coDJMdVYEt8Hjhppxbvc8BYMjpMavqRA/viewform" class="secondary" target="_blank">Join as Tutor</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="imagee.png" alt="Women Learning Illustration">
+    </div>
+  </section>
+
+  <!--<section class="countdown">
+    <h2>Next Bootcamp Starts In:</h2>
+    <div class="timer" id="timer">
+      <div><span id="days">00</span><br>Days</div>
+      <div><span id="hours">00</span><br>Hours</div>
+      <div><span id="minutes">00</span><br>Minutes</div>
+      <div><span id="seconds">00</span><br>Seconds</div>
+    </div>
+    <button class="save-btn">Save Your Spot</button>
+  </section> -->
+
+  <section id="countdown">
+        <h2>Next Bootcamp Starts In:</h2>
+        <div class="countdown-box">
+          <div class="time-segment">
+            <span id="days">--</span>
+            <p>Days</p>
+          </div>
+          <div class="time-segment">
+            <span id="hours">--</span>
+            <p>Hours</p>
+          </div>
+          <div class="time-segment">
+            <span id="minutes">--</span>
+            <p>Mins</p>
+          </div>
+          <div class="time-segment">
+            <span id="seconds">--</span>
+            <p>Secs</p>
+          </div>
+        </div>
+        <button class="save-btn">Save Your Spot</button>
+      </section>
+
+  <!-- Mission Section -->
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p>VisioNari aims to break barriers by providing accessible English education to women worldwide, empowering them with language skills that open doors to new opportunities and connections.</p>
+  <div class="mission-cards">
+    <div class="card">
+      <div class="card-header">
+        <h4>Top Tier Curriculum</h4>
+        <img src="Book.png" alt="Curriculum Icon" class="card-icon">
+      </div>
+      <p>Access our carefully crafted English learning materials at low cost, designed specifically for women’s empowerment.</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4>Volunteer Mentors</h4>
+        <img src="Volunteer.png" alt="Mentor Icon" class="card-icon">
+      </div>
+      <p>Learn from dedicated volunteers who are passionate about making a difference through education.</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4>Global Access</h4>
+        <img src="Global.png" alt="Global Access Icon" class="card-icon">
+      </div>
+      <p>Join our community from anywhere in the world with just an internet connection and a desire to learn.</p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4>Community Support</h4>
+        <img src="Community.png" alt="Community Icon" class="card-icon">
+      </div>
+      <p>Connect with like-minded women who share your journey and provide encouragement every step of the way.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section 
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <p>Our simple three-step process makes it easy to start your English learning journey.</p>
+  <div class="how-cards">
+    <div class="how-step">
+      <div class="step-number">1</div>
+      <h4>Register</h4>
+      <p>Create your free account and tell us about your goals and current English level.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-number">2</div>
+      <h4>Get Matched</h4>
+      <p>We’ll pair you with a mentor and study group that fits your schedule and learning needs.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-number">3</div>
+      <h4>Learn Together</h4>
+      <p>Attend virtual sessions, practice with peers, and track your progress through our platform.</p>
+    </div>
+  </div>
+</section> -->
+
+<!-- Testimonial Section 
+<section class="testimonial">
+  <blockquote>
+    “I wish I had this app during COVID. The community is so supportive and the mentors truly care about our progress. In just three months, my confidence in speaking English has grown tremendously, and I’ve made friends from around the world who inspire me daily.”
+  </blockquote>
+  <div class="testimonial-author">
+    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Kavimayil P.K">
+    <div>
+      <strong>Kavimayil P.K</strong><br />
+      <span>English Learner, Chennai</span>
+    </div>
+  </div>
+</section>
+
+CTA Section 
+<section class="cta-banner">
+  <h2>Be part of a movement changing lives through language.</h2>
+  <p>Whether you're looking to learn or ready to share your knowledge, there's a place for you in our community.</p>
+  <button class="cta-button">Get Involved</button>
+</section> -->
+
+<footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="visio-logo.png" alt="VisioNari Logo" class="footer-logo" />
+            <div class="footer-text">
+              <h1>VisioNari</h1>
+              <p>Enabling women to become VisioNari-es</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <h2>Get In Touch</h2>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/company/visionari12/"><img src="linkedin.png" alt="LinkedIn" /></a>
+              <a href="mailto:visionari2030@gmail.com"><img src="Gmail.png" alt="Email" /></a>
+              <a href="https://www.instagram.com/visionari_en/"><img src="Instagram.png" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 VisioNari. All rights reserved.</p>
+        </div>
+      </footer>
+
+
+</script>
+  <script src="script.js"></script>
+
+<script>
+  const translations = {
+    en: {
+      header: "Envision.<br>Empower.<br><span>Elevate.</span>",
+      paragraph: "Join our English bootcamp designed to uplift,<br>educate, and connect women across the globe.",
+      joinLearner: "Join as Learner",
+      joinTutor: "Join as Tutor",
+      countdown: "Next Bootcamp Starts In:",
+      save: "Save Your Spot"
+    },
+    ta: {
+      header: "கற்பிக்கவும்.<br>சாதிக்கவும்.<br><span>உயர்வடையவும்.</span>",
+      paragraph: "எங்களின் ஆங்கில படிப்பில் சேருங்கள். இது பெண்களை ஊக்குவிக்க,<br> கல்வி அளிக்க மற்றும் உலகளாவியமாக இணைக்க உருவாக்கப்பட்டுள்ளது.",
+      joinLearner: "கற்றவராக சேரவும்",
+      joinTutor: "ஆசிரியராக சேரவும்",
+      countdown: "அடுத்த பயிற்சி முகாம் தொடங்க: ",
+      save: "இடத்தை சேமிக்கவும்"
+    },
+    te: {
+      header: "కల్పించు.<br>సాధించు.<br><span>ఎత్తుకు చేరు.</span>",
+      paragraph: "మా ఇంగ్లీష్ బూట్‌క్యాంప్‌లో చేరండి, ఇది మహిళలను ఉత్తేజపరిచేందుకు,<br> విద్యను అందించేందుకు, ప్రపంచవ్యాప్తంగా అనుసంధానించేందుకు రూపొందించబడింది.",
+      joinLearner: "లెర్నర్‌గా చేరండి",
+      joinTutor: "ట్యూటర్‌గా చేరండి",
+      countdown: "తదుపరి బూట్‌క్యాంప్ ప్రారంభం:",
+      save: "మీ స్థలాన్ని సేవ్ చేయండి"
+    },
+    kn: {
+      header: "ಕಲ್ಪನೆ ಮಾಡಿ.<br>ಶಕ್ತಿಶಾಲಿಯಾಗಿರಿ.<br><span>ಏರಳಿ.</span>",
+      paragraph: "ನಮ್ಮ ಇಂಗ್ಲಿಷ್ ಬೂಟ್‌ಕ್ಯಾಂಪ್‌ಗೆ ಸೇರಿ,<br> ಮಹಿಳೆಯರನ್ನು ಉತ್ತೇಜಿಸಲು, ಶಿಕ್ಷಣ ನೀಡಲು ಮತ್ತು ಜಾಗತಿಕವಾಗಿ ಸಂಪರ್ಕಿಸಲು ಇದು ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ.",
+      joinLearner: "ಅಭ್ಯಾಸಿಯಾಗಿ ಸೇರಿ",
+      joinTutor: "ಗುರುವಾಗ ಸೇರಿ",
+      countdown: "ಮುಂದಿನ ಬೂಟ್‌ಕ್ಯಾಂಪ್ ಆರಂಭ:",
+      save: "ನಿಮ್ಮ ಸ್ಥಾನವನ್ನು ಉಳಿಸಿ"
+    },
+    hi: {
+      header: "कल्पना करें।<br>सशक्त बनें।<br><span>ऊँचाइयों तक पहुँचें।</span>",
+      paragraph: "हमारे अंग्रेज़ी बूटकैम्प में शामिल हों, जो महिलाओं को सशक्त बनाने,<br>शिक्षा देने और उन्हें जोड़ने के लिए डिज़ाइन किया गया है।",
+      joinLearner: "सीखने वाला बनें",
+      joinTutor: "शिक्षक बनें",
+      countdown: "अगला बूटकैम्प शुरू होगा:",
+      save: "अपना स्थान सुरक्षित करें"
+    },
+    es: {
+      header: "Imaginar.<br>Empoderar.<br><span>Elevar.</span>",
+      paragraph: "Únete a nuestro bootcamp de inglés para elevar,<br>educar y conectar a mujeres en todo el mundo.",
+      joinLearner: "Únete como estudiante",
+      joinTutor: "Únete como tutora",
+      countdown: "El próximo bootcamp comienza en:",
+      save: "Reserva tu lugar"
+    }
+  };
+
+  function changeLanguage() {
+    const lang = document.getElementById('language-selector').value;
+    localStorage.setItem('preferredLanguage', lang);
+    const t = translations[lang];
+
+    document.querySelector('.hero-text h1').innerHTML = t.header;
+    document.querySelector('.hero-text p').innerHTML = t.paragraph;
+    document.querySelector('.primary').innerText = t.joinLearner;
+    document.querySelector('.secondary').innerText = t.joinTutor;
+    document.querySelector('#countdown h2').innerText = t.countdown;
+    document.querySelector('.save-btn').innerText = t.save;
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang && translations[savedLang]) {
+      document.getElementById('language-selector').value = savedLang;
+      changeLanguage();
+    }
+  });
+</script>
+</body>
+</html>
