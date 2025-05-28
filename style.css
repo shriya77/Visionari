@@ -331,7 +331,7 @@ body {
 /* footer*/
   .footer {
     background: linear-gradient(to left, #73275c, #5f0a87);
-    color: #ffe600;
+    color: #fed405;
     padding: 20px 40px;
   }
   
@@ -367,7 +367,7 @@ body {
   .footer-text p {
     margin: 5px 0 0;
     font-weight: 400;
-    color: #ffe600;
+    color: #fed405;
   }
   
   .footer-right {
